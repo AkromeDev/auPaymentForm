@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FormComponent implements OnInit {
   nightMode = true;
   logo = "🌙";
-  textColor = "text-gray-900";
-  surfaceColor = "bg-gray-900";
+  textColorClass = "text-gray-100";
+  surfaceColorClass = "bg-gray-900";
+  imageUrl="https://source.unsplash.com/1L71sPT5XKc";
 
   constructor() { }
   
@@ -20,13 +21,16 @@ export class FormComponent implements OnInit {
     if (this.nightMode === true) {
       this.nightMode = !this.nightMode;
       this.logo = "☀️";
-      this.textColor = "text-gray-100";
-      this.surfaceColor = "bg-white";
+      this.textColorClass = "text-gray-900";
+      this.surfaceColorClass = "bg-white";
+      this.imageUrl = "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80";
+      
     } else {
       this.nightMode = !this.nightMode;
       this.logo = "🌙";
-      this.textColor = "text-gray-900";
-      this.surfaceColor = "bg-gray-900";
+      this.textColorClass = "text-gray-100";
+      this.surfaceColorClass = "bg-gray-900";
+      this.imageUrl = "https://source.unsplash.com/1L71sPT5XKc";
     }
   };
 }
