@@ -17,7 +17,7 @@ export class SecondFormComponent implements OnInit {
 
   namePipe = 'Jane Doe';
   datePipe = '01 June, 1990';
-  amountPipe = '€ 1.000.000';
+  amountPipe: number = 100000000;
   
   constructor() { }
   
@@ -45,15 +45,14 @@ export class SecondFormComponent implements OnInit {
     }
   };
 
-  formatName(input: any) {
+  formatName(input: string) {
     this.namePipe = input;
   }
   
-  formatInput(input: any) {
-   if (typeof input ==='number') {
-      this.amountPipe = "€ " + input;
-    } else {
-      this.datePipe = "something";
-    }
+  formatDate(input: string) {
+    this.datePipe = input;
+  }
+  formatAmount(input: string) {
+    this.amountPipe = parseFloat(input);
   }
 }
