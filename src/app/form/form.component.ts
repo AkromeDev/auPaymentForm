@@ -10,8 +10,10 @@ export class FormComponent implements OnInit {
   logo = "🌙";
   textColorClass = "text-gray-100";
   surfaceColorClass = "bg-gray-900";
-  imageUrl="https://source.unsplash.com/1L71sPT5XKc";
-
+  imageUrl="url('../assets/16.jpg')";
+  profilImageUrl="url('../assets/1.jpg')";
+  srcUrl="../assets/1.jpg";
+  
   constructor() { }
   
   ngOnInit(): void {
@@ -23,14 +25,18 @@ export class FormComponent implements OnInit {
       this.logo = "☀️";
       this.textColorClass = "text-gray-900";
       this.surfaceColorClass = "bg-white";
-      this.imageUrl = "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80";
+      this.imageUrl = "url('../assets/19.jpg')";
+      this.profilImageUrl="url('../assets/2jpg')";
+      this.srcUrl="../assets/2.jpg";
       
     } else {
       this.nightMode = !this.nightMode;
       this.logo = "🌙";
       this.textColorClass = "text-gray-100";
       this.surfaceColorClass = "bg-gray-900";
-      this.imageUrl = "https://source.unsplash.com/1L71sPT5XKc";
+      this.imageUrl = "url('../assets/16.jpg')";
+      this.profilImageUrl="url('../assets/1.jpg')";
+      this.srcUrl="../assets/1.jpg";
     }
   };
 }
