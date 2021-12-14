@@ -1,5 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { FormComponent } from './form/form.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
