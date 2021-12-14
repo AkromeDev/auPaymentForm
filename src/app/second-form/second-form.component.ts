@@ -45,10 +45,12 @@ export class SecondFormComponent implements OnInit {
     }
   };
 
+  formatName(input: any) {
+    this.namePipe = input;
+  }
+  
   formatInput(input: any) {
-    if (input.type = Text) {
-      this.namePipe = input.Uppercase;
-    } else if (input.type = Number()) {
+   if (typeof input ==='number') {
       this.amountPipe = "€ " + input;
     } else {
       this.datePipe = "something";
