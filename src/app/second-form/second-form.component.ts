@@ -14,6 +14,10 @@ export class SecondFormComponent implements OnInit {
   imageUrl="url('../assets/16.jpg')";
   profilImageUrl="url('../assets/4.jpg')";
   srcUrl="../assets/4.jpg";
+
+  namePipe = 'Jane Doe';
+  datePipe = '01 June, 1990';
+  amountPipe = '€ 1.000.000';
   
   constructor() { }
   
@@ -40,4 +44,14 @@ export class SecondFormComponent implements OnInit {
       this.srcUrl="../assets/4.jpg";
     }
   };
+
+  formatInput(input: any) {
+    if (input.type = Text) {
+      this.namePipe = input.Uppercase;
+    } else if (input.type = Number()) {
+      this.amountPipe = "€ " + input;
+    } else {
+      this.datePipe = "something";
+    }
+  }
 }
