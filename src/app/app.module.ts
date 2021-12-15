@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { SecondFormComponent } from './second-form/second-form.component';
+import { MilesConverterPipe } from './pipes/miles-converter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    SecondFormComponent
+    SecondFormComponent,
+    MilesConverterPipe
   ],
   imports: [
     BrowserModule,
