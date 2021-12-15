@@ -15,10 +15,10 @@ export class SecondFormComponent implements OnInit {
   profilImageUrl="url('../assets/4.jpg')";
   srcUrl="../assets/4.jpg";
 
-  namePipe = 'Jane Doe';
-  datePipe = '01 June, 1990';
-  amountPipe: number = 100000000;
-  milesPipe: number = 0;
+  namePipe = '';
+  datePipe = '';
+  amountPipe!: number;
+  milesPipe!: number;
   
   constructor() { }
   

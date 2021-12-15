@@ -5,8 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MilesConverterPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: any, ...args: unknown[]): unknown {
+    if (!value) {
+      return '';
+    }
+    return (value * 1.60934).toFixed(2);
   }
 
 }
